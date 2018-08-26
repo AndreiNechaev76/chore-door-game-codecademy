@@ -2,26 +2,26 @@ var doorImage1 = document.querySelector('#door1');
 var doorImage2 = document.getElementById('door2');
 var doorImage3 = document.getElementById('door3');
 var startButton = document.getElementById('start');
-var botDoorPath = "./resources/images/robot.svg";
-var beachDoorPath = "./resources/images/beach.svg";
-var spaceDoorPath = "./resources/images/space.svg";
+var botDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/robot.svg";
+var beachDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/beach.svg";
+var spaceDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/space.svg";
 var numClosedDoors = 3;
 var openDoor1;
 var openDoor2;
 var openDoor3;
-var closedDoorPath = "./resources/images/closed_door.svg";
+var closedDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg";
 var currentlyPlaying = true;
 
 
 let isBot = (door) => {
-  if (door.src === "file:///C:/Users/User/codecademyProject/chore%20door%20game/resources/images/robot.svg") {
+  if (door.src === "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/robot.svg") {
     return true;
   } else {
     return false;
   }
 }
 let isClicked = (x) => {
-  if (x.src === "file:///C:/Users/User/codecademyProject/chore%20door%20game/resources/images/closed_door.svg"){
+  if (x.src === "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg"){
     return false;
   } else {
     return true;
